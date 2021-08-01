@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
 namespace BookKeeper.Data
@@ -14,5 +15,8 @@ namespace BookKeeper.Data
         public string Title { get; set; }
         public int Category { get; set; }
         public string Author { get; set; }
+
+
+        public List<Book> itemList = new List<Book>();
     }
 }

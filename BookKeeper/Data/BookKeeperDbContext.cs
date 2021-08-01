@@ -8,8 +8,12 @@ namespace BookKeeper.Data
         public DbSet<Book> Books { get; set; }
         public DbSet<Category> Categories { get; set; }
         public DbSet<CategoryType> CategoryTypes { get; set; }
-        public BookKeeperDbContext()
+     
+
+        public BookKeeperDbContext(DbContextOptions<BookKeeperDbContext> options)
+           : base(options)
         {
+
         }
     }
 }
