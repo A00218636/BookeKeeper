@@ -16,7 +16,5 @@ namespace BookKeeper.Data
         public int Category { get; set; }
         public string Author { get; set; }
 
-
-        public List<Book> itemList = new List<Book>();
     }
 }
